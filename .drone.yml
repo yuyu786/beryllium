@@ -9,7 +9,7 @@ steps:
    image: ubuntu:20.04
    commands:
           - apt-get update -y
-          - apt-get install git make gcc wget bc pigz fakeroot mkbootimg -y
+          - apt-get install git make gcc wget bc pigz fakeroot mkbootimg 7z zipalign -y
           - git clone https://github.com/sabmohmaya/arm32-gcc -b 9 --depth 1 && git clone https://github.com/sabmohmaya/arm64-gcc -b 9 --depth 1
           - wget https://raw.githubusercontent.com/RahifM/repo_update/k/temp.patch && git apply temp.patch
           - bash build_master.sh
