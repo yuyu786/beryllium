@@ -9,5 +9,5 @@ steps:
    image: ubuntu:20.04
    commands:
           - apt-get update -y
-          - apt-get install git make -y
+          - apt-get install git make gcc -y
           - bash build_master.sh
