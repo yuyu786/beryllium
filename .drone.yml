@@ -1,6 +1,9 @@
 kind: pipeline
 name: Karmel Drone
 
+clone:
+  depth: 1
+
 steps:
  - name: compile
    image: ubuntu:20.04
