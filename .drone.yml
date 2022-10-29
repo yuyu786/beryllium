@@ -8,4 +8,6 @@ steps:
  - name: compile
    image: ubuntu:20.04
    commands:
+          - apt-get update -y
+          - apt-get install git make -y
           - bash build_master.sh
