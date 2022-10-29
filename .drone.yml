@@ -1,0 +1,8 @@
+kind: pipeline
+name: Karmel Drone
+
+steps:
+ - name: compile
+   image: ubuntu:20.04
+   commands:
+          - bash build_master.sh
